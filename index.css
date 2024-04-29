@@ -25,3 +25,13 @@ main {
   margin-left: 24%;
   text-align: center;
 }
+.icon {
+  color: rgba(221, 221, 56, 0.909);
+}
+.bi-cart-check-fill {
+  color: rgb(197, 197, 197);
+  font-size: 25px;
+}
+.child {
+  width: 18rem;
+}

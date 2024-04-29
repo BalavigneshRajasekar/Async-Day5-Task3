@@ -46,7 +46,7 @@ function fetchGameData(apiData) {
         gameData.forEach((element) => {
           //The child element which shows all the game data
           let child = document.createElement("div");
-          child.innerHTML = ` <div class="card" style="width: 18rem">
+          child.innerHTML = ` <div class="card">
           <h4 class="px-3 py-2 fst-italic fw-bolder">${element.title}</h4>
           <img style="width:286px;height:150px"
             src="${element.thumb}"
@@ -63,11 +63,11 @@ function fetchGameData(apiData) {
             <h6 class="card-text">Normal price : ${element.normalPrice} $</h6>
             <h6 class="card-text">sale price : ${element.salePrice} $</h6>
             <h6 class="card-text">
-              Rating : ${element.dealRating}<i class="bi bi-star-fill"></i>
+              Rating : ${element.dealRating}<i class="bi bi-star-fill icon"></i>
             </h6>
            <a href="#" class="btn btn-success"
               ><sub class="text-decoration-line-through ">${element.normalPrice}</sub>${element.salePrice} $
-              <i class="bi bi-cart-check-fill px-2"></i
+              <i class="bi bi-cart-check-fill px-2 "></i
             ></a>
           </div>
         </div>`;
